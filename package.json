@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "project n°3 oppenclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:.public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kepoulpe/NicolasMoreno_3_11112021.git"
+  },
+  "author": "kepoulpe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kepoulpe/NicolasMoreno_3_11112021/issues"
+  },
+  "homepage": "https://github.com/Kepoulpe/NicolasMoreno_3_11112021#readme"
+}

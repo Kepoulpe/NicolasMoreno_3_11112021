@@ -4,7 +4,8 @@
   "description": "project n°3 oppenclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/main.scss:.public/style.css"
+    "sass": "sass --watch ./scss/main.scss:./public/style.css",
+    "prefix":" postcss .public/style.css --use autoprefixer -d ./public/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,8 @@
   "author": "kepoulpe",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kepoulpe/NicolasMoreno_3_11112021/issues"
+    "url": "https://github.com/Kepoulpe/NicolasMoreno_3_11112021/issues",
+    "browserlist": "last 4 versions"
   },
   "homepage": "https://github.com/Kepoulpe/NicolasMoreno_3_11112021#readme"
 }

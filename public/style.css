@@ -1,15 +1,8 @@
-/* colors */
-/* fonts */
-@font-face {
-  font-family: shrikhand;
-  src: url(/fonts/shrikhand/Shrikhand-Regular.ttf);
-}
-@font-face {
-  font-family: roboto;
-  src: url(/fonts/roboto/Roboto-Regular.ttf);
-}
-body {
-  font-family: roboto;
-}
+@import "//scss/utils/_variables.scss";
+@import "//scss/utils/_fonctions.scss";
+@import "//scss/utils/mixins";
+@import "//scss/utils/placeholders";
+@import "//scss/base/general";
+@import "//scss/layouts/header";
 
 /*# sourceMappingURL=style.css.map */

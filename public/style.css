@@ -43,8 +43,21 @@ a, a:hover, a:focus, a:active, a:visited {
   filter: drop-shadow(2px 2px 2px #a3a3a3);
 }
 
-.filter__card {
-  display: flex;
+@media only screen and (max-width: 575.99px) {
+  .filter__card {
+    display: flex;
+    align-items: center;
+    background: #EFEFEF;
+    height: 80px;
+    margin-bottom: 20px;
+    width: 330px;
+    border-radius: 25px;
+    filter: drop-shadow(2px 2px 2px #a3a3a3);
+  }
+  .filter__card--number {
+    background: #9356DC;
+    color: white;
+  }
 }
 
 /* colors */

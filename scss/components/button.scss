@@ -1,0 +1,18 @@
+@import "./../utils/variables";
+@import "./../utils/fonctions";
+@import "./../utils/mixins";
+@import "./../utils/placeholders";
+
+.button {
+    background: linear-gradient($color-secondary, $color-primary);
+    color: white;
+    letter-spacing: 1px;
+    height: 45px;
+    width: 200px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    justify-content: center;
+    filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
+}

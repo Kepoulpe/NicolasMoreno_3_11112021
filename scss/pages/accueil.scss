@@ -1,0 +1,52 @@
+@import "./../utils/variables";
+@import "./../utils/fonctions";
+@import "./../utils/mixins";
+@import "./../utils/placeholders";
+
+/* nav */
+.nav {
+    margin-bottom: 3px;
+    box-shadow: 0px -10px 50px grey;
+}
+.nav__arrow {
+    display: none;
+}
+
+/* first section */
+.city {
+    @include respond (smartphone) {
+        @include smarphone-city
+    }
+}
+.city__wrapper {
+    @include respond (smartphone) {
+        @include city-wrapper
+    }
+}
+.marker {
+    font-size: 15px;
+    margin-right: 20px;
+}
+.description {
+    @include description-div;
+}
+.description__title {
+    width: 230px;
+    text-align: center;
+}
+.description__paragraph {
+    @include respond (smartphone){
+        text-align: center;
+        font-size: 15px;
+        width: 300px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}
+.second__section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-left: 20px;
+    
+}

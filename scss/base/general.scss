@@ -10,4 +10,10 @@
 body {
     font-family: roboto;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover, a:focus, a:active, a:visited {
+    text-decoration: none;
+    color: inherit;
 }

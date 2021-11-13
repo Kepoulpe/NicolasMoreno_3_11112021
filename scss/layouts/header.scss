@@ -1,10 +1,21 @@
-@import "//scss/utils/variables";
-@import "//scss/utils/fonctions";
-@import "//scss/utils/mixins";
-@import "//scss/utils/placeholders";
+@import "./../utils/variables";
+@import "./../utils/fonctions";
+@import "./../utils/mixins";
+@import "./../utils/placeholders";
 
 .nav {
     @include respond (smartphone) {
-        @include nav-position
+        @include smartphone-nav;
+        &__arrow {
+            @include back-arrow;
+        }
+        &__logo--container {
+            @include logo-container;
+        }
+        &__logo {
+            justify-self: center;
+            width: 180px;
+        }
     }
+    
 }

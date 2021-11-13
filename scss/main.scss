@@ -1,6 +1,9 @@
-@import '//scss/utils/variables';
-@import "//scss/utils/fonctions";
-@import "//scss/utils/mixins";
-@import "//scss/utils/placeholders";
-@import "//scss/base/general.scss";
-@import "//scss/layouts/header.scss";
+@import "./utils/variables";
+@import "./utils/fonctions";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./base/general.scss";
+@import "./components/button.scss";
+@import "./components/card-accueil.scss";
+@import "./layouts/header.scss";
+@import "./pages/accueil.scss";

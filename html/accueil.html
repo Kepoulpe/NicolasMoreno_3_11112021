@@ -11,34 +11,36 @@
 <body>
     <header>
         <nav class="nav">
-            <div><a href=""><i class="fas fa-arrow-left"></i></a></div>
-            <div><img src="../images/pics/ohmyfood.png" alt="brand logo"></div>
+            <div class="nav__arrow"><a class="nav__arrow--link" href=""><i class="fas fa-arrow-left"></i></a></div>
+            <div class="nav__logo--container"><img class="nav__logo" src="../images/pics/ohmyfood.png" alt="brand logo"></div>
         </nav>
     </header>
     <section>
-        <div>
-            <i class="fas fa-map-marker-alt"></i>
-            <p> Paris, Belleville</p>
+        <div class="city">
+            <div class="city__wrapper">
+                <i class="fas fa-map-marker-alt marker"></i>
+                <p> Paris, Belleville</p>
+            </div>
         </div>
-        <div>
-            <h1> Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
-            <div>Explorez nos restaurants</div>
+        <div class="description">
+            <h1 class="description__title"> Réservez le menu qui vous convient</h1>
+            <p class="description__paragraph">Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
+            <div class="button">Explorez nos restaurants</div>
         </div>
     </section>
-    <section>
+    <section class="second__section">
         <h2>Fonctionnement</h2>
-        <div>
+        <div class="filter__card">
             <div>1</div>
             <div><i class="fas fa-mobile-alt"></i></div>
             <div><p>Choisissez un restaurant</p></div>
         </div>
-        <div>
+        <div class="filter__card">
             <div>2</div>
             <div><i class="fas fa-list-ul"></i></div>
             <div><p>Composez votre menu</p></div>
         </div>
-        <div>
+        <div class="filter__card">
             <div>3</div>
             <div><i class="fas fa-store"></i></div>
             <div><p>Dégustez au restaurant</p></div>

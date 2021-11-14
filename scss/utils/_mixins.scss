@@ -39,15 +39,15 @@
      display: flex;
      justify-content: center;
  }
-
- /* first section */
- @mixin smarphone-city {
+/* accueil */
+    /* first section */
+@mixin smarphone-city {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6vh;
     background-color: darken($background-color,3%);
- }
+}
  @mixin city-wrapper {
      display: flex;
      align-items: center;
@@ -61,4 +61,53 @@
      align-items: center;
      background-color: $background-color;
  }
+
+    /* third section */
+    @mixin restaurant-section {
+        display: flex;
+        flex-direction: column;
+        background: $background-color;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+    @mixin restaurant-card {
+        background-color: white;
+        height: 255px;
+        width: 335px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
+    }
+    @mixin card-image-style {
+        height: 70%;
+        border-radius: 20px 20px 0px 0px;
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+
  
+
+ /* footer */
+
+@mixin footer-style {
+    color: white;
+    background-color: darken($background-color, 65%);
+    height: 200px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+@mixin ul-style {
+    list-style: none;
+    font-family: roboto;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    margin-left: -40px;
+    &--margin {
+        margin-bottom: 10px;
+    }
+    &__icon--spacing {
+        margin-right: 10px;
+    }
+}

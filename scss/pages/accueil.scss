@@ -50,3 +50,6 @@
     padding-left: 20px;
     
 }
+.third__section {
+    @include restaurant-section;
+}

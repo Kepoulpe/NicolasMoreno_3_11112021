@@ -1,0 +1,18 @@
+@import "./../utils/variables";
+@import "./../utils/fonctions";
+@import "./../utils/mixins";
+@import "./../utils/placeholders";
+
+footer {
+    @include footer-style;
+}
+.list {
+    @include ul-style;
+}
+h3 {
+    font-family: shrikhand;
+    font-weight: lighter;
+}
+.fa-hands-helping {
+    font-size: 9px;
+}

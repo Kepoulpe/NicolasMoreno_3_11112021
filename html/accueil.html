@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,13 @@
     <script src="https://kit.fontawesome.com/c194efece2.js" crossorigin="anonymous"></script>
     <title>Accueil</title>
 </head>
+
 <body>
     <header>
         <nav class="nav">
             <div class="nav__arrow"><a class="nav__arrow--link" href=""><i class="fas fa-arrow-left"></i></a></div>
-            <div class="nav__logo--container"><img class="nav__logo" src="../images/pics/ohmyfood.png" alt="brand logo"></div>
+            <div class="nav__logo--container"><img class="nav__logo" src="../images/pics/ohmyfood.png" alt="brand logo">
+            </div>
         </nav>
     </header>
     <section>
@@ -29,38 +32,89 @@
         </div>
     </section>
     <section class="second__section">
-        <h2>Fonctionnement</h2>
-        <div class="filter__card">
-            <div class="filter__card--number ">1</div>
-            <div><i class="fas fa-mobile-alt"></i></div>
-            <div><p>Choisissez un restaurant</p></div>
-        </div>
-        <div class="filter__card">
-            <div class="filter__card--number ">2</div>
-            <div><i class="fas fa-list-ul"></i></div>
-            <div><p>Composez votre menu</p></div>
-        </div>
-        <div class="filter__card">
-            <div class="filter__card--number">3</div>
-            <div><i class="fas fa-store"></i></div>
-            <div><p>Dégustez au restaurant</p></div>
+        <div class="filter__wrapper">
+            <h2 class="filter__wrapper__title--position">Fonctionnement</h2>
+            <div class="filter__card">
+                <div class="filter__card--number ">1</div>
+                <div class="filter__card__wrapper">
+                <div class="filter__card__icon--style"><i class="fas fa-mobile-alt filter__card--icon"></i></div>
+                <div class="filter__card--text">
+                    <p>Choisissez un restaurant</p>
+                </div>
+            </div>
+            </div>
+            <div class="filter__card">
+                <div class="filter__card--number ">2</div>
+                <div class="filter__card__wrapper">
+                <div class="filter__card__icon--style"><i class="fas fa-list-ul filter__card--icon"></i></div>
+                <div class="filter__card--text">
+                    <p>Composez votre menu</p>
+                </div>
+            </div>
+            </div>
+            <div class="filter__card">
+                <div class="filter__card--number">3</div>
+                <div class="filter__card__wrapper">
+                <div class="filter__card__icon--style"><i class="fas fa-store filter__card--icon"></i></div>
+                <div class="filter__card--text">
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </div>
+            </div>
         </div>
     </section>
     <section class="third__section">
-        <h2>Restaurants</h2>
-        <div class="card"><div class="card__background--1"></div><div class="card__bottom"><div><h4 class="card__bottom__title">La palette du goût</h4><p>Ménilmontant</p></div><i class="far fa-heart"></i></div></div>
-        <div class="card"><div class="card__background--2"></div><div class="card__bottom"><div><h4 class="card__bottom__title">La note enchatée</h4><p>Charonne</p></div><i class="far fa-heart"></i></div></div>
-        <div class="card"><div class="card__background--3"></div><div class="card__bottom"><div><h4 class="card__bottom__title">A la française</h4><p>Cité Rouge</p></div><i class="far fa-heart"></i></div></div>
-        <div class="card"><div class="card__background--4"></div><div class="card__bottom"><div><h4 class="card__bottom__title">Le délice des sens</h4><p>Folie-Méricourt</p></div><i class="far fa-heart"></i></div></div>
+        <div class="third__section__wrapper">
+            <h2 class="third__section__title--position">Restaurants</h2>
+            <div class="card"><a href="#">
+                    <div class="card__background--1"></div>
+                    <div class="card__bottom">
+                        <div>
+                            <h4 class="card__bottom__title">La palette du goût</h4>
+                            <p class="card__bottom__paragraph">Ménilmontant</p>
+                        </div><i class="far fa-heart"></i>
+                    </div>
+                </a></div>
+            <div class="card"><a href="#">
+                    <div class="card__background--2"></div>
+                    <div class="card__bottom">
+                        <div>
+                            <h4 class="card__bottom__title">La note enchatée</h4>
+                            <p class="card__bottom__paragraph">Charonne</p>
+                        </div><i class="far fa-heart"></i>
+                    </div>
+                </a></div>
+            <div class="card"><a href="#">
+                    <div class="card__background--3"></div>
+                    <div class="card__bottom">
+                        <div>
+                            <h4 class="card__bottom__title">A la française</h4>
+                            <p class="card__bottom__paragraph">Cité Rouge</p>
+                        </div><i class="far fa-heart"></i>
+                    </div>
+                </a></div>
+            <div class="card card__margin--bottom"><a href="#">
+                    <div class="card__background--4"></div>
+                    <div class="card__bottom">
+                        <div>
+                            <h4 class="card__bottom__title">Le délice des sens</h4>
+                            <p class="card__bottom__paragraph">Folie-Méricourt</p>
+                        </div><i class="far fa-heart"></i>
+                    </div>
+                </a></div>
+        </div>
     </section>
     <footer>
         <h3>ohmyfood</h3>
         <ul class="list">
-            <li class="list--margin"><a><i class="fas fa-utensils list__icon--spacing"></i>Proposer un restaurant</a></li>
-            <li class="list--margin"><a><i class="fas fa-hands-helping list__icon--spacing"></i>Devenir Partenaire</a></li>
+            <li class="list--margin"><a><i class="fas fa-utensils list__icon--spacing"></i>Proposer un restaurant</a>
+            </li>
+            <li class="list--margin"><a><i class="fas fa-hands-helping list__icon--spacing"></i>Devenir Partenaire</a>
+            </li>
             <li class="list--margin"><a>Mentions légales</a></li>
             <li><a>Contact</a></li>
         </ul>
     </footer>
 </body>
+
 </html>

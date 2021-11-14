@@ -28,4 +28,21 @@
 .card__bottom {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    &__title {
+        font-weight: bolder;
+        margin: 0;
+    }
+    &__paragraph {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+}
+.fa-heart {
+    font-size: 25px;
+    margin-right: 8px;
+}
+.card__margin--bottom {
+    margin-bottom: 70px;
 }

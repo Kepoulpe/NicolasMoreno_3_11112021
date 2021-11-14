@@ -43,13 +43,17 @@
         margin-bottom: 30px;
     }
 }
+/* second section */
 .second__section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 25px;
-    padding-left: 20px;
-    
 }
+/* third section */
 .third__section {
     @include restaurant-section;
+    &__title--position {
+        margin-left: -190px;
+    }
 }

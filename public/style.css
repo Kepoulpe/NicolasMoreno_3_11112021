@@ -57,20 +57,59 @@ a, a:hover, a:focus, a:active, a:visited {
 /* first section */
 /* third section */
 /* footer */
+.filter__wrapper {
+  width: 86%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filter__wrapper__title--position {
+  margin-left: -145px;
+}
+
 @media only screen and (max-width: 575.99px) {
   .filter__card {
     display: flex;
     align-items: center;
     background: #EFEFEF;
-    height: 80px;
+    height: 75px;
+    width: 100%;
+    max-width: 330px;
     margin-bottom: 20px;
-    width: 330px;
     border-radius: 25px;
     filter: drop-shadow(2px 2px 2px #a3a3a3);
   }
+  .filter__card__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter__card__wrapper--font {
+    font-weight: bold;
+  }
+  .filter__card__icon--style {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .filter__card--text {
+    width: 75%;
+  }
+  .filter__card--icon {
+    font-size: 20px;
+    color: #707070;
+  }
   .filter__card--number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #9356DC;
     color: white;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    margin-left: -15px;
   }
 }
 
@@ -86,7 +125,8 @@ a, a:hover, a:focus, a:active, a:visited {
   .card {
     background-color: white;
     height: 255px;
-    width: 335px;
+    width: 100%;
+    max-width: 335px;
     margin-bottom: 20px;
     border-radius: 20px;
     filter: drop-shadow(2px 2px 2px #a3a3a3);
@@ -128,6 +168,25 @@ a, a:hover, a:focus, a:active, a:visited {
 .card__bottom {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.card__bottom__title {
+  font-weight: bolder;
+  margin: 0;
+}
+.card__bottom__paragraph {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.fa-heart {
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+.card__margin--bottom {
+  margin-bottom: 70px;
 }
 
 /* colors */
@@ -270,19 +329,30 @@ h3 {
   }
 }
 
+/* second section */
 .second__section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 25px;
-  padding-left: 20px;
 }
 
+/* third section */
 .third__section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: #EFEFEF;
   padding-top: 30px;
-  padding-left: 20px;
+}
+.third__section__wrapper {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third__section__title--position {
+  margin-left: -190px;
 }
 
 /*# sourceMappingURL=style.css.map */

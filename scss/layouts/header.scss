@@ -3,6 +3,7 @@
 @import "./../utils/mixins";
 @import "./../utils/placeholders";
 
+/* smatphone */
 .nav {
     @include respond (smartphone) {
         @include smartphone-nav;
@@ -18,4 +19,39 @@
         }
     }
     
+}
+
+/* tablet */
+.nav {
+    @include respond (tablet) {
+        @include smartphone-nav;
+        &__arrow {
+            @include back-arrow;
+        }
+        &__logo--container {
+            @include logo-container;
+        }
+        &__logo {
+            justify-self: center;
+            width: 250px;
+        }
+    }
+}
+
+/* desktop */
+
+.nav {
+    @include respond (desktop) {
+        @include desktop-nav;
+        &__arrow {
+            @include back-arrow;
+        }
+        &__logo--container {
+            @include logo-container;
+        }
+        &__logo {
+            justify-self: center;
+            width: 250px;
+        }
+    }
 }

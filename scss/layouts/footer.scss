@@ -3,6 +3,9 @@
 @import "./../utils/mixins";
 @import "./../utils/placeholders";
 
+
+/* smartphone */
+@include respond (smartphone) {
 footer {
     @include footer-style;
 }
@@ -16,3 +19,40 @@ h3 {
 .fa-hands-helping {
     font-size: 9px;
 }
+}
+
+/* tablet */
+@include respond (tablet) {
+    footer {
+        @include footer-style-tablet;
+    }
+    .list {
+        @include ul-style-tablet;
+    }
+    h3 {
+        font-family: shrikhand;
+        font-weight: lighter;
+        font-size: 30px;
+    }
+    .fa-hands-helping {
+        font-size: 9px;
+    }
+    }
+
+/* desktop */
+@include respond (desktop) {
+    footer {
+        @include footer-style-tablet;
+    }
+    .list {
+        @include ul-style-tablet;
+    }
+    h3 {
+        font-family: shrikhand;
+        font-weight: lighter;
+        font-size: 30px;
+    }
+    .fa-hands-helping {
+        font-size: 9px;
+    }
+    }

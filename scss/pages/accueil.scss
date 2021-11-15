@@ -13,9 +13,10 @@
 }
 
 /* first section */
+    /* smartphone */
 .city {
     @include respond (smartphone) {
-        @include smarphone-city
+        @include city
     }
 }
 .city__wrapper {
@@ -23,6 +24,19 @@
         @include city-wrapper
     }
 }
+    /* tablet */
+
+    .city {
+        @include respond (tablet) {
+            @include city
+        }
+    }
+    .city__wrapper {
+        @include respond (tablet) {
+            @include city-wrapper
+        }
+    }
+
 .marker {
     font-size: 15px;
     margin-right: 20px;
@@ -30,9 +44,32 @@
 .description {
     @include description-div;
 }
+    /* desktop */
+
+    .city {
+        @include respond (desktop) {
+            @include city-desktop
+        }
+    }
+    .city__wrapper {
+        @include respond (desktop) {
+            @include city-wrapper-desktop
+        }
+    }
+
+.marker {
+    font-size: 30px;
+    margin-right: 20px;
+}
+.description {
+    @include description-div-desktop;
+}
+    /* smartphone */
 .description__title {
+    @include respond (smartphone){
     width: 230px;
     text-align: center;
+}
 }
 .description__paragraph {
     @include respond (smartphone){
@@ -43,6 +80,22 @@
         margin-bottom: 30px;
     }
 }
+    /* tablet */
+    .description__title {
+        @include respond (tablet){
+        width: 500px;
+        text-align: center;
+    }
+    }
+    .description__paragraph {
+        @include respond (tablet){
+            text-align: center;
+            font-size: 18px;
+            width: 400px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+    }    
 /* second section */
 .second__section {
     display: flex;
@@ -51,9 +104,30 @@
     padding-top: 25px;
 }
 /* third section */
+    /* smartphone */
 .third__section {
+    @include respond (smartphone) {
     @include restaurant-section;
     &__title--position {
         margin-left: -190px;
     }
 }
+}
+    /* tablet */
+    .third__section {
+        @include respond (tablet) {
+        @include restaurant-section;
+    }
+    }
+
+    /* desktop */
+    .third__section {
+        @include respond (desktop) {
+        @include restaurant-section-desktop;
+        &__title--position {
+            width: 100%;
+            text-align: center;
+            font-size: 35px;
+        }
+    }
+    }

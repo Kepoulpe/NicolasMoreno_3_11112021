@@ -3,6 +3,8 @@
 @import "./../utils/mixins";
 @import "./../utils/placeholders";
 
+
+/* smartphone */
 @include respond (smartphone) {
     .card {
         @include restaurant-card;
@@ -26,6 +28,7 @@
     background-image: url(/images/pics/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 .card__bottom {
+    @include respond (smartphone) {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,10 +42,79 @@
         margin-bottom: 0;
     }
 }
+}
 .fa-heart {
     font-size: 25px;
     margin-right: 8px;
 }
 .card__margin--bottom {
     margin-bottom: 70px;
+}
+
+/* tablet */
+@include respond (tablet) {
+    .card {
+        @include restaurant-card-tablet
+    }
+    .card__background--1 {
+        @include card-image-style-tablet
+    }
+    .card__background--2 {
+        @include card-image-style-tablet;
+        background-position-y: -250px;
+    }
+    .card__background--3 {
+        @include card-image-style-tablet
+    }
+    .card__background--4 {
+        @include card-image-style-tablet
+    }
+    .card__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        &__title {
+            font-weight: bolder;
+            margin: 0;
+        }
+        &__paragraph {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* desktop */
+@include respond (desktop) {
+    .card {
+        @include restaurant-card-desktop
+    }
+    .card__background--1 {
+        @include card-image-style-desktop;
+    }
+    .card__background--2 {
+        @include card-image-style-desktop;
+        background-position-y: -180px;
+    }
+    .card__background--3 {
+        @include card-image-style-desktop
+    }
+    .card__background--4 {
+        @include card-image-style-desktop
+    }
+    .card__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        &__title {
+            font-weight: bolder;
+            margin: 0;
+        }
+        &__paragraph {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+    }
 }

@@ -3,55 +3,43 @@
 @import "./../utils/mixins";
 @import "./../utils/placeholders";
 
-/* smatphone */
+
 .nav {
-    @include respond (smartphone) {
-        @include smartphone-nav;
+
+    // common
+    display: flex;
+    align-items: center;
+    width: 100vw;
+
+    &__logo--container {
+        @include logo-container;
+    }
+    
+    @include respondMany(smartphone, tablet) {
+        height: 8vh;
         &__arrow {
             @include back-arrow;
         }
-        &__logo--container {
-            @include logo-container;
-        }
+    }
+    // set nav height based on screen width
+    @include respond (smartphone) {
         &__logo {
             justify-self: center;
             width: 180px;
         }
     }
-    
-}
 
-/* tablet */
-.nav {
-    @include respond (tablet) {
-        @include smartphone-nav;
-        &__arrow {
-            @include back-arrow;
-        }
-        &__logo--container {
-            @include logo-container;
-        }
+    @include respondMany(tablet, desktop) {
         &__logo {
             justify-self: center;
             width: 250px;
         }
     }
-}
-
-/* desktop */
-
-.nav {
     @include respond (desktop) {
-        @include desktop-nav;
-        &__arrow {
-            @include back-arrow;
-        }
-        &__logo--container {
-            @include logo-container;
-        }
-        &__logo {
-            justify-self: center;
-            width: 250px;
+        height: 15vh;
+        .fa-arrow-left {
+            display: none;
         }
     }
+
 }

@@ -10,6 +10,8 @@
         @include restaurant-card;
     } 
 }
+
+// TODO create a function that will set these classes dynamically
 .card__background--1 {
     @include card-image-style;
     background-image: url(/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -27,6 +29,18 @@
     @include card-image-style;
     background-image: url(/images/pics/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
+/* @mixin a-mixin() {
+    color: red;
+}
+$urls: ("url1.jpg" "url2.jpg" "url3.jpg" "url4.jpg");
+
+@for $i from 1 through 4 {
+  $url: list.nth($urls, $i);
+  .outer__iner--#{$i} {
+    @include a-mixin;
+    background-image: url(#{$url});
+  }
+}*/
 .card__bottom {
     @include respond (smartphone) {
     display: flex;

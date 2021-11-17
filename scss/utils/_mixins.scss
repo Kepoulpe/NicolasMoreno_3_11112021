@@ -178,6 +178,11 @@
 
 @mixin card-menu {
     background-color: white;
+    border-radius: 15px;
+    width: 345px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
 }
  /* footer */
     /* smartphone */

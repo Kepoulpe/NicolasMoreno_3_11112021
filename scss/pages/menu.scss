@@ -9,10 +9,14 @@
 }
 .menu__section {
     background-color: $background-color;
-    height: 150vh;
+    height: 170vh;
     border-radius: 45px 45px 0px 0px;
     margin-top: -40px;
 }
+//.fa-arrow-left {
+    //margin-left: 25px;
+
+//}
 
 .menu {
     display: flex;
@@ -21,4 +25,21 @@
     &__title {
         font-family: shrikhand;
     }
+}
+.title {
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.underline--green {
+    height: 3px;
+    width: 40px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: $color-tertiary;
+}
+.button__menu--wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
 }

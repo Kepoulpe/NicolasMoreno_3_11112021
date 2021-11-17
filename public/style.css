@@ -322,18 +322,6 @@ a, a:hover, a:focus, a:active, a:visited {
 /* footer */
 /* smartphone */
 /* tablet */
-/* smartphone */
-@media only screen and (max-width: 575.99px) {
-  .card {
-    background-color: white;
-    height: 255px;
-    width: 100%;
-    max-width: 335px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    filter: drop-shadow(2px 2px 2px #a3a3a3);
-  }
-}
 .card__background--1 {
   height: 70%;
   border-radius: 20px 20px 0px 0px;
@@ -347,7 +335,6 @@ a, a:hover, a:focus, a:active, a:visited {
   border-radius: 20px 20px 0px 0px;
   background-size: cover;
   background-position: bottom;
-  background-position-y: -150px;
   background-image: url(/images/pics/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg);
 }
 
@@ -368,6 +355,18 @@ a, a:hover, a:focus, a:active, a:visited {
 }
 
 @media only screen and (max-width: 575.99px) {
+  .card {
+    background-color: white;
+    height: 255px;
+    width: 100%;
+    max-width: 335px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 2px #a3a3a3);
+  }
+  .card__background--2 {
+    background-position-y: -150px;
+  }
   .card__bottom {
     display: flex;
     align-items: center;
@@ -382,18 +381,15 @@ a, a:hover, a:focus, a:active, a:visited {
     margin-top: 5px;
     margin-bottom: 0;
   }
+  .card__bottom__margin--bottom {
+    margin-bottom: 70px;
+  }
 }
-
 .fa-heart {
   font-size: 25px;
   margin-right: 8px;
 }
 
-.card__margin--bottom {
-  margin-bottom: 70px;
-}
-
-/* tablet */
 @media only screen and (min-width: 576px) and (max-width: 1199.99px) {
   .card {
     background-color: white;
@@ -404,6 +400,20 @@ a, a:hover, a:focus, a:active, a:visited {
     border-radius: 20px;
     filter: drop-shadow(2px 2px 2px #a3a3a3);
   }
+  .card__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .card__bottom__title {
+    font-weight: bolder;
+    margin: 0;
+  }
+  .card__bottom__paragraph {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
 
   .card__background--1 {
     height: 80%;
@@ -413,10 +423,17 @@ a, a:hover, a:focus, a:active, a:visited {
   }
 
   .card__background--2 {
+    background-position-y: -250px;
+  }
+
+  .card__background--2 {
     height: 80%;
     border-radius: 20px 20px 0px 0px;
     background-size: cover;
     background-position: bottom;
+  }
+
+  .card__background--2 {
     background-position-y: -250px;
   }
 
@@ -427,6 +444,10 @@ a, a:hover, a:focus, a:active, a:visited {
     background-position: bottom;
   }
 
+  .card__background--2 {
+    background-position-y: -250px;
+  }
+
   .card__background--4 {
     height: 80%;
     border-radius: 20px 20px 0px 0px;
@@ -434,22 +455,10 @@ a, a:hover, a:focus, a:active, a:visited {
     background-position: bottom;
   }
 
-  .card__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-  }
-  .card__bottom__title {
-    font-weight: bolder;
-    margin: 0;
-  }
-  .card__bottom__paragraph {
-    margin-top: 5px;
-    margin-bottom: 0;
+  .card__background--2 {
+    background-position-y: -250px;
   }
 }
-/* desktop */
 @media only screen and (min-width: 1200px) {
   .card {
     background-color: white;
@@ -460,36 +469,6 @@ a, a:hover, a:focus, a:active, a:visited {
     border-radius: 20px;
     filter: drop-shadow(2px 2px 2px #a3a3a3);
   }
-
-  .card__background--1 {
-    height: 80%;
-    border-radius: 20px 20px 0px 0px;
-    background-size: cover;
-    background-position: bottom;
-  }
-
-  .card__background--2 {
-    height: 80%;
-    border-radius: 20px 20px 0px 0px;
-    background-size: cover;
-    background-position: bottom;
-    background-position-y: -180px;
-  }
-
-  .card__background--3 {
-    height: 80%;
-    border-radius: 20px 20px 0px 0px;
-    background-size: cover;
-    background-position: bottom;
-  }
-
-  .card__background--4 {
-    height: 80%;
-    border-radius: 20px 20px 0px 0px;
-    background-size: cover;
-    background-position: bottom;
-  }
-
   .card__bottom {
     display: flex;
     align-items: center;
@@ -503,6 +482,117 @@ a, a:hover, a:focus, a:active, a:visited {
   .card__bottom__paragraph {
     margin-top: 5px;
     margin-bottom: 0;
+  }
+
+  .card__background--1 {
+    height: 80%;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .card__background--2 {
+    background-position-y: -180px;
+  }
+
+  .card__background--2 {
+    height: 80%;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .card__background--2 {
+    background-position-y: -180px;
+  }
+
+  .card__background--3 {
+    height: 80%;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .card__background--2 {
+    background-position-y: -180px;
+  }
+
+  .card__background--4 {
+    height: 80%;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .card__background--2 {
+    background-position-y: -180px;
+  }
+}
+/* colors */
+/**
+* responsive mixin with two possible sets of arguments
+*  - smartphone, tablet
+*  - tablet, desktop
+*/
+/* arrow */
+/* logo */
+/* accueil */
+/* first section */
+/* smartphone tablet */
+/* desktop */
+/* third section */
+/* smartphone */
+/* tablet */
+/* desktop */
+/* footer */
+/* smartphone */
+/* tablet */
+.background__laPaletteDugout {
+  background-image: url(/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  height: 30vh;
+  background-size: cover;
+}
+
+.background__laNoteEnchantee {
+  background-image: url(/images/pics/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg);
+  height: 30vh;
+  background-size: cover;
+}
+
+.background__aLaFrancaise {
+  background-image: url(/images/pics/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  height: 30vh;
+  background-size: cover;
+}
+
+.background__leDeliceDesSens {
+  background-image: url(/images/pics/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  height: 30vh;
+  background-size: cover;
+}
+
+/* colors */
+/**
+* responsive mixin with two possible sets of arguments
+*  - smartphone, tablet
+*  - tablet, desktop
+*/
+/* arrow */
+/* logo */
+/* accueil */
+/* first section */
+/* smartphone tablet */
+/* desktop */
+/* third section */
+/* smartphone */
+/* tablet */
+/* desktop */
+/* footer */
+/* smartphone */
+/* tablet */
+@media only screen and (max-width: 575.99px) {
+  .card__menu {
+    background-color: white;
   }
 }
 /* colors */
@@ -528,6 +618,8 @@ a, a:hover, a:focus, a:active, a:visited {
   display: flex;
   align-items: center;
   width: 100vw;
+  margin-bottom: 3px;
+  box-shadow: 0px -10px 50px grey;
 }
 .nav__logo--container {
   width: 100%;
@@ -563,9 +655,6 @@ a, a:hover, a:focus, a:active, a:visited {
 @media only screen and (min-width: 1200px) {
   .nav {
     height: 15vh;
-  }
-  .nav .fa-arrow-left {
-    display: none;
   }
 }
 
@@ -718,56 +807,27 @@ a, a:hover, a:focus, a:active, a:visited {
 /* smartphone */
 /* tablet */
 /* nav */
-.nav {
-  margin-bottom: 3px;
-  box-shadow: 0px -10px 50px grey;
-}
-
 .nav__arrow {
   display: none;
 }
 
 /* first section */
-/* smartphone */
-@media only screen and (max-width: 575.99px) {
-  .city {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6vh;
-    background-color: #e7e7e7;
-  }
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  background-color: #e7e7e7;
 }
 
-@media only screen and (max-width: 575.99px) {
-  .city__wrapper {
-    display: flex;
-    align-items: center;
-    width: 180px;
-  }
-}
-
-/* tablet */
-@media only screen and (min-width: 576px) and (max-width: 1199.99px) {
-  .city {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6vh;
-    background-color: #e7e7e7;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 1199.99px) {
-  .city__wrapper {
-    display: flex;
-    align-items: center;
-    width: 180px;
-  }
+.city__wrapper {
+  display: flex;
+  align-items: center;
+  width: 180px;
 }
 
 .marker {
-  font-size: 15px;
+  font-size: 20px;
   margin-right: 20px;
 }
 
@@ -779,7 +839,6 @@ a, a:hover, a:focus, a:active, a:visited {
   background-color: #EFEFEF;
 }
 
-/* desktop */
 @media only screen and (min-width: 1200px) {
   .city {
     display: flex;
@@ -790,19 +849,17 @@ a, a:hover, a:focus, a:active, a:visited {
     background-color: #e7e7e7;
   }
 }
+.city__wrapper {
+  display: flex;
+  align-items: center;
+}
 
 @media only screen and (min-width: 1200px) {
-  .city__wrapper {
-    display: flex;
-    align-items: center;
+  .marker {
+    font-size: 30px;
+    margin-right: 20px;
   }
 }
-
-.marker {
-  font-size: 30px;
-  margin-right: 20px;
-}
-
 .description {
   display: flex;
   height: 40vh;
@@ -914,6 +971,45 @@ a, a:hover, a:focus, a:active, a:visited {
     text-align: center;
     font-size: 35px;
   }
+}
+
+/* colors */
+/**
+* responsive mixin with two possible sets of arguments
+*  - smartphone, tablet
+*  - tablet, desktop
+*/
+/* arrow */
+/* logo */
+/* accueil */
+/* first section */
+/* smartphone tablet */
+/* desktop */
+/* third section */
+/* smartphone */
+/* tablet */
+/* desktop */
+/* footer */
+/* smartphone */
+/* tablet */
+.nav {
+  box-shadow: 0px 0px 0px;
+}
+
+.menu__section {
+  background-color: #EFEFEF;
+  height: 150vh;
+  border-radius: 45px 45px 0px 0px;
+  margin-top: -40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu__title {
+  font-family: shrikhand;
 }
 
 /*# sourceMappingURL=style.css.map */

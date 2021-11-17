@@ -4,63 +4,44 @@
 @import "./../utils/placeholders";
 
 /* nav */
-.nav {
-    margin-bottom: 3px;
-    box-shadow: 0px -10px 50px grey;
-}
+
 .nav__arrow {
     display: none;
 }
 
 /* first section */
-    /* smartphone */
+    // style for smartphone and tablet
 .city {
-    @include respond (smartphone) {
-        @include city
-    }
+        @include city   
 }
 .city__wrapper {
-    @include respond (smartphone) {
         @include city-wrapper
-    }
 }
-    /* tablet */
-
-    .city {
-        @include respond (tablet) {
-            @include city
-        }
-    }
-    .city__wrapper {
-        @include respond (tablet) {
-            @include city-wrapper
-        }
-    }
 
 .marker {
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 20px;
 }
 .description {
     @include description-div;
 }
-    /* desktop */
+    // style for desktop
 
-    .city {
+.city {
         @include respond (desktop) {
             @include city-desktop
         }
-    }
-    .city__wrapper {
-        @include respond (desktop) {
+        &__wrapper { 
             @include city-wrapper-desktop
         }
-    }
-
-.marker {
-    font-size: 30px;
-    margin-right: 20px;
 }
+@include respond (desktop){
+    .marker {
+        font-size: 30px;
+        margin-right: 20px;
+    }
+}
+
 .description {
     @include description-div-desktop;
 }

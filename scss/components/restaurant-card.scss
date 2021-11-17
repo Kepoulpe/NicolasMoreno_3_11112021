@@ -1,134 +1,108 @@
+@use 'sass:list';
 @import "./../utils/variables";
 @import "./../utils/fonctions";
 @import "./../utils/mixins";
 @import "./../utils/placeholders";
 
-
-/* smartphone */
-@include respond (smartphone) {
-    .card {
-        @include restaurant-card;
-    } 
-}
-
-// TODO create a function that will set these classes dynamically
-.card__background--1 {
-    @include card-image-style;
-    background-image: url(/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-}
-.card__background--2 {
-    @include card-image-style;
-    background-position-y: -150px;
-    background-image: url(/images/pics/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg);
-}
-.card__background--3 {
-    @include card-image-style;
-    background-image: url(/images/pics/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-}
-.card__background--4 {
-    @include card-image-style;
-    background-image: url(/images/pics/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-}
-/* @mixin a-mixin() {
-    color: red;
-}
-$urls: ("url1.jpg" "url2.jpg" "url3.jpg" "url4.jpg");
+// Function that will set these classes dynamically
+$urls: ("/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg","/images/pics/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg","/images/pics/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg","/images/pics/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 
 @for $i from 1 through 4 {
   $url: list.nth($urls, $i);
-  .outer__iner--#{$i} {
-    @include a-mixin;
+  .card__background--#{$i} {
+    @include card-image-style;
     background-image: url(#{$url});
   }
-}*/
-.card__bottom {
-    @include respond (smartphone) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    &__title {
-        font-weight: bolder;
-        margin: 0;
-    }
-    &__paragraph {
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
 }
+
+// smartphone card style
+@include respond (smartphone) {
+    .card {
+        @include restaurant-card;
+        &__background--2 {
+            background-position-y: -150px;
+        }
+        &__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            &__title {
+                font-weight: bolder;
+                margin: 0;
+            }
+            &__paragraph {
+                margin-top: 5px;
+                margin-bottom: 0;
+            }
+            &__margin--bottom {
+                margin-bottom: 70px;
+            }
+        
+        }
+    } 
 }
+
 .fa-heart {
     font-size: 25px;
     margin-right: 8px;
 }
-.card__margin--bottom {
-    margin-bottom: 70px;
-}
 
-/* tablet */
+// tablet card style
 @include respond (tablet) {
     .card {
-        @include restaurant-card-tablet
-    }
-    .card__background--1 {
-        @include card-image-style-tablet
-    }
-    .card__background--2 {
-        @include card-image-style-tablet;
-        background-position-y: -250px;
-    }
-    .card__background--3 {
-        @include card-image-style-tablet
-    }
-    .card__background--4 {
-        @include card-image-style-tablet
-    }
-    .card__bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px;
-        &__title {
-            font-weight: bolder;
-            margin: 0;
+        @include restaurant-card-tablet;
+        &__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            &__title {
+                font-weight: bolder;
+                margin: 0;
+            }
+            &__paragraph {
+                margin-top: 5px;
+                margin-bottom: 0;
+            }
         }
-        &__paragraph {
-            margin-top: 5px;
-            margin-bottom: 0;
+    }
+    @for $i from 1 through 4 {
+        .card__background--#{$i} {
+            @include card-image-style-tablet
+        }
+        .card__background--2 {
+            background-position-y: -250px;
         }
     }
 }
 
-/* desktop */
+// desktop card style
+
 @include respond (desktop) {
     .card {
-        @include restaurant-card-desktop
-    }
-    .card__background--1 {
-        @include card-image-style-desktop;
-    }
-    .card__background--2 {
-        @include card-image-style-desktop;
-        background-position-y: -180px;
-    }
-    .card__background--3 {
-        @include card-image-style-desktop
-    }
-    .card__background--4 {
-        @include card-image-style-desktop
-    }
-    .card__bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px;
-        &__title {
-            font-weight: bolder;
-            margin: 0;
+        @include restaurant-card-desktop;
+        &__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            &__title {
+                font-weight: bolder;
+                margin: 0;
+            }
+            &__paragraph {
+                margin-top: 5px;
+                margin-bottom: 0;
+            }
         }
-        &__paragraph {
-            margin-top: 5px;
-            margin-bottom: 0;
+    }
+    @for $i from 1 through 4 {
+        .card__background--#{$i} {
+            @include card-image-style-desktop
+        }
+        .card__background--2 {
+            background-position-y: -180px;
         }
     }
 }

@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <script src="https://kit.fontawesome.com/c194efece2.js" crossorigin="anonymous"></script>
     <title>Menu - Le délice des sens</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div><a href="./accueil.html"><i class="fas fa-arrow-left"></i></a></div>
-            <div><img src="../images/pics/ohmyfood.png" alt="brand logo"></div>
+        <nav class="nav">
+            <div><a class="nav__arrow--link" href="accueil.html"><i class="fas fa-arrow-left"></i></a></div>
+            <div class="nav__logo--container"><img class="nav__logo" src="../images/pics/ohmyfood.png" alt="brand logo">
+            </div>
         </nav>
     </header>
+    <div class="background__leDeliceDesSens"></div>
+    <section class="menu__section"></section>
+    <footer>
+        <h3>ohmyfood</h3>
+        <ul class="list">
+            <li class="list--margin"><a><i class="fas fa-utensils list__icon--spacing"></i>Proposer un restaurant</a>
+            </li>
+            <li class="list--margin"><a><i class="fas fa-hands-helping list__icon--spacing"></i>Devenir Partenaire</a>
+            </li>
+            <li class="list--margin"><a>Mentions légales</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,11 @@
+@import "./../utils/variables";
+@import "./../utils/fonctions";
+@import "./../utils/mixins";
+@import "./../utils/placeholders";
+
+
+@include respond (smartphone) {
+    .card__menu {
+        @include card-menu
+    }
+}

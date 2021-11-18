@@ -3,26 +3,25 @@
 @import "./../utils/mixins";
 @import "./../utils/placeholders";
 
-
 /* smartphone */
-@include respond (smartphone) {
-footer {
-    @include footer-style;
-}
-.list {
-    @include ul-style;
-}
-h3 {
-    font-family: shrikhand;
-    font-weight: lighter;
-}
-.fa-hands-helping {
-    font-size: 9px;
-}
+@include respond(smartphone) {
+    footer {
+        @include footer-style;
+    }
+    .list {
+        @include ul-style;
+    }
+    h3 {
+        font-family: shrikhand;
+        font-weight: lighter;
+    }
+    .fa-hands-helping {
+        font-size: 9px;
+    }
 }
 
 /* tablet */
-@include respond (tablet) {
+@include respond(tablet) {
     footer {
         @include footer-style-tablet;
     }
@@ -37,10 +36,10 @@ h3 {
     .fa-hands-helping {
         font-size: 9px;
     }
-    }
+}
 
 /* desktop */
-@include respond (desktop) {
+@include respond(desktop) {
     footer {
         @include footer-style-tablet;
     }
@@ -55,4 +54,4 @@ h3 {
     .fa-hands-helping {
         font-size: 9px;
     }
-    }
+}

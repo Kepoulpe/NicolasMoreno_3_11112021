@@ -5,177 +5,177 @@
 
 /* smartphone */
 .filter__wrapper {
-    @include respond (smartphone){
-    width: 86%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__title--position{
-        margin-left: -145px;
-    }
-}
-}
-.filter__card {
-    @include respond (smartphone){
-    display: flex;
-    align-items: center;
-    background: $background-color;
-    height: 75px;
-    width: 100%;
-    max-width: 330px;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
-    &__wrapper {
-        width: 100%;
+    @include respond(smartphone) {
+        width: 86%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        &--font {
-            font-weight: bold;
+        &__title--position {
+            margin-left: -145px;
         }
     }
-    &__icon--style {
-        width: 20%;
-        display: flex;
-        justify-content: center;
-    }
-    &--text {
-        width: 75%;
-    }
-    &--icon {
-        font-size: 20px;
-        color: darken($background-color, 50%);
-    }
-    &--number {
+}
+.filter__card {
+    @include respond(smartphone) {
         display: flex;
         align-items: center;
-        justify-content: center;
-        background: $color-primary;
-        color: white;
-        border-radius: 50px;
-        width: 25px;
-        height: 25px;
-        margin-left: -15px;
+        background: $background-color;
+        height: 75px;
+        width: 100%;
+        max-width: 330px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
+        &__wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &--font {
+                font-weight: bold;
+            }
+        }
+        &__icon--style {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+        }
+        &--text {
+            width: 75%;
+        }
+        &--icon {
+            font-size: 20px;
+            color: darken($background-color, 50%);
+        }
+        &--number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $color-primary;
+            color: white;
+            border-radius: 50px;
+            width: 25px;
+            height: 25px;
+            margin-left: -15px;
+        }
     }
-}
 }
 
 /* tablet */
 .filter__wrapper {
-    @include respond (tablet){
-    width: 86%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    @include respond(tablet) {
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .filter__card {
-    @include respond (tablet) {
-        display: flex;
-    align-items: center;
-    background: $background-color;
-    height: 75px;
-    width: 100%;
-    max-width: 630px;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
-    &__wrapper {
-        width: 100%;
+    @include respond(tablet) {
         display: flex;
         align-items: center;
-        justify-content: center;
-        &--font {
-            font-weight: bold;
+        background: $background-color;
+        height: 75px;
+        width: 100%;
+        max-width: 630px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
+        &__wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &--font {
+                font-weight: bold;
+            }
+        }
+        &__icon--style {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+        }
+        &--text {
+            width: 75%;
+            text-align: center;
+            margin-left: -80px;
+            font-size: 20px;
+        }
+        &--icon {
+            font-size: 20px;
+            color: darken($background-color, 50%);
+        }
+        &--number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $color-primary;
+            color: white;
+            border-radius: 50px;
+            width: 25px;
+            height: 25px;
+            margin-left: -15px;
         }
     }
-    &__icon--style {
-        width: 20%;
-        display: flex;
-        justify-content: center;
-    }
-    &--text {
-        width: 75%;
-        text-align: center;
-        margin-left: -80px;
-        font-size: 20px;
-    }
-    &--icon {
-        font-size: 20px;
-        color: darken($background-color, 50%);
-    }
-    &--number {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: $color-primary;
-        color: white;
-        border-radius: 50px;
-        width: 25px;
-        height: 25px;
-        margin-left: -15px;
-    }
-}
 }
 
 /* desktop */
 .filter__wrapper {
-    @include respond (desktop){
-    width: 86%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__title--position{
-        font-size: 35px;
-    }
-}
-}
-.filter__card {
-    @include respond (desktop) {
+    @include respond(desktop) {
+        width: 86%;
         display: flex;
-    align-items: center;
-    background: $background-color;
-    height: 100px;
-    width: 100%;
-    max-width: 630px;
-    margin-bottom: 40px;
-    border-radius: 35px;
-    filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
-    &__wrapper {
-        width: 100%;
-        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        &--font {
-            font-weight: bold;
+        &__title--position {
+            font-size: 35px;
         }
     }
-    &__icon--style {
-        width: 20%;
-        display: flex;
-        justify-content: center;
-    }
-    &--text {
-        width: 75%;
-        text-align: center;
-        margin-left: -80px;
-        font-size: 30px;
-    }
-    &--icon {
-        font-size: 30px;
-        color: darken($background-color, 50%);
-    }
-    &--number {
+}
+.filter__card {
+    @include respond(desktop) {
         display: flex;
         align-items: center;
-        justify-content: center;
-        background: $color-primary;
-        color: white;
-        border-radius: 50px;
-        width: 50px;
-        height: 50px;
-        margin-left: -25px;
+        background: $background-color;
+        height: 100px;
+        width: 100%;
+        max-width: 630px;
+        margin-bottom: 40px;
+        border-radius: 35px;
+        filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
+        &__wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &--font {
+                font-weight: bold;
+            }
+        }
+        &__icon--style {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+        }
+        &--text {
+            width: 75%;
+            text-align: center;
+            margin-left: -80px;
+            font-size: 30px;
+        }
+        &--icon {
+            font-size: 30px;
+            color: darken($background-color, 50%);
+        }
+        &--number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $color-primary;
+            color: white;
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            margin-left: -25px;
+        }
     }
-}
 }

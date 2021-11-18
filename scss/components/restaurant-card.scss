@@ -1,22 +1,27 @@
-@use 'sass:list';
+@use "sass:list";
 @import "./../utils/variables";
 @import "./../utils/fonctions";
 @import "./../utils/mixins";
 @import "./../utils/placeholders";
 
 // Function that will set these classes dynamically
-$urls: ("/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg","/images/pics/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg","/images/pics/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg","/images/pics/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+$urls: (
+    "/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg",
+    "/images/pics/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg",
+    "/images/pics/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg",
+    "/images/pics/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+);
 
 @for $i from 1 through 4 {
-  $url: list.nth($urls, $i);
-  .card__background--#{$i} {
-    @include card-image-style;
-    background-image: url(#{$url});
-  }
+    $url: list.nth($urls, $i);
+    .card__background--#{$i} {
+        @include card-image-style;
+        background-image: url(#{$url});
+    }
 }
 
 // smartphone card style
-@include respond (smartphone) {
+@include respond(smartphone) {
     .card {
         @include restaurant-card;
         &__background--2 {
@@ -38,9 +43,8 @@ $urls: ("/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg","/imag
             &__margin--bottom {
                 margin-bottom: 70px;
             }
-        
         }
-    } 
+    }
 }
 
 .fa-heart {
@@ -49,7 +53,7 @@ $urls: ("/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg","/imag
 }
 
 // tablet card style
-@include respond (tablet) {
+@include respond(tablet) {
     .card {
         @include restaurant-card-tablet;
         &__bottom {
@@ -69,7 +73,7 @@ $urls: ("/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg","/imag
     }
     @for $i from 1 through 4 {
         .card__background--#{$i} {
-            @include card-image-style-tablet
+            @include card-image-style-tablet;
         }
         .card__background--2 {
             background-position-y: -250px;
@@ -79,7 +83,7 @@ $urls: ("/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg","/imag
 
 // desktop card style
 
-@include respond (desktop) {
+@include respond(desktop) {
     .card {
         @include restaurant-card-desktop;
         &__bottom {
@@ -99,7 +103,7 @@ $urls: ("/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg","/imag
     }
     @for $i from 1 through 4 {
         .card__background--#{$i} {
-            @include card-image-style-desktop
+            @include card-image-style-desktop;
         }
         .card__background--2 {
             background-position-y: -180px;

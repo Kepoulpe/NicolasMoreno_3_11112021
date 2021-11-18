@@ -3,9 +3,7 @@
 @import "./../utils/mixins";
 @import "./../utils/placeholders";
 
-
 .nav {
-
     // common
     display: flex;
     align-items: center;
@@ -17,15 +15,21 @@
     &__logo--container {
         @include logo-container;
     }
-    
-    @include respondMany(smartphone, tablet) {
+
+    @include respond(smartphone) {
+        height: 8vh;
+        &__arrow {
+            @include back-arrow;
+        }
+    }
+    @include respond(tablet) {
         height: 8vh;
         &__arrow {
             @include back-arrow;
         }
     }
     // set nav height based on screen width
-    @include respond (smartphone) {
+    @include respond(smartphone) {
         &__logo {
             justify-self: center;
             width: 180px;
@@ -38,8 +42,19 @@
             width: 250px;
         }
     }
-    @include respond (desktop) {
+    @include respond(desktop) {
         height: 15vh;
     }
+}
+// set naw arrow size beased on screen width for menu pages
 
+@include respond (tablet) {
+    .nav__arrow__menu {
+        font-size: 25px;
+    }
+}
+@include respond (desktop) {
+    .nav__arrow__menu {
+        font-size: 35px;
+    }
 }

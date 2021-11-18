@@ -10,12 +10,12 @@
 }
 
 /* first section */
-    // style for smartphone and tablet
+// style for smartphone and tablet
 .city {
-        @include city   
+    @include city;
 }
 .city__wrapper {
-        @include city-wrapper
+    @include city-wrapper;
 }
 
 .marker {
@@ -25,17 +25,17 @@
 .description {
     @include description-div;
 }
-    // style for desktop
+// style for desktop
 
 .city {
-        @include respond (desktop) {
-            @include city-desktop
-        }
-        &__wrapper { 
-            @include city-wrapper-desktop
-        }
+    @include respond(desktop) {
+        @include city-desktop;
+    }
+    &__wrapper {
+        @include city-wrapper-desktop;
+    }
 }
-@include respond (desktop){
+@include respond(desktop) {
     .marker {
         font-size: 30px;
         margin-right: 20px;
@@ -45,15 +45,15 @@
 .description {
     @include description-div-desktop;
 }
-    /* smartphone */
+/* smartphone */
 .description__title {
-    @include respond (smartphone){
-    width: 230px;
-    text-align: center;
-}
+    @include respond(smartphone) {
+        width: 230px;
+        text-align: center;
+    }
 }
 .description__paragraph {
-    @include respond (smartphone){
+    @include respond(smartphone) {
         text-align: center;
         font-size: 15px;
         width: 300px;
@@ -61,22 +61,22 @@
         margin-bottom: 30px;
     }
 }
-    /* tablet */
-    .description__title {
-        @include respond (tablet){
+/* tablet */
+.description__title {
+    @include respond(tablet) {
         width: 500px;
         text-align: center;
     }
+}
+.description__paragraph {
+    @include respond(tablet) {
+        text-align: center;
+        font-size: 18px;
+        width: 400px;
+        margin-top: 0;
+        margin-bottom: 30px;
     }
-    .description__paragraph {
-        @include respond (tablet){
-            text-align: center;
-            font-size: 18px;
-            width: 400px;
-            margin-top: 0;
-            margin-bottom: 30px;
-        }
-    }    
+}
 /* second section */
 .second__section {
     display: flex;
@@ -85,25 +85,25 @@
     padding-top: 25px;
 }
 /* third section */
-    /* smartphone */
+/* smartphone */
 .third__section {
-    @include respond (smartphone) {
-    @include restaurant-section;
-    &__title--position {
-        margin-left: -190px;
+    @include respond(smartphone) {
+        @include restaurant-section;
+        &__title--position {
+            margin-left: -190px;
+        }
     }
 }
-}
-    /* tablet */
-    .third__section {
-        @include respond (tablet) {
+/* tablet */
+.third__section {
+    @include respond(tablet) {
         @include restaurant-section;
     }
-    }
+}
 
-    /* desktop */
-    .third__section {
-        @include respond (desktop) {
+/* desktop */
+.third__section {
+    @include respond(desktop) {
         @include restaurant-section-desktop;
         &__title--position {
             width: 100%;
@@ -111,4 +111,4 @@
             font-size: 35px;
         }
     }
-    }
+}

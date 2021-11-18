@@ -1,17 +1,16 @@
 @mixin respond($breakpoint) {
-
     @if $breakpoint == smartphone {
-        @media only screen and ( max-width: 575.99px ) {
+        @media only screen and (max-width: 575.99px) {
             @content;
         }
     }
     @if $breakpoint == tablet {
-        @media only screen and ( min-width: 576px ) and ( max-width: 1199.99px ) {
+        @media only screen and (min-width: 576px) and (max-width: 1199.99px) {
             @content;
         }
     }
     @if $breakpoint == desktop {
-        @media only screen and ( min-width: 1200px ) {
+        @media only screen and (min-width: 1200px) {
             @content;
         }
     }
@@ -24,7 +23,7 @@
 */
 @mixin respondMany($breakpointA, $breakpointB) {
     @if $breakpointA == smartphone and $breakpointB == tablet {
-        @media only screen and ( max-width: 575.99px ) {
+        @media only screen and (max-width: 575.99px) {
             @content;
         }
     }
@@ -35,7 +34,7 @@
     }
 }
 
-/* arrow */
+// arrow
 @mixin back-arrow {
     width: 20vw;
     display: flex;
@@ -45,151 +44,150 @@
     position: absolute;
     left: 10px;
 }
-    /* logo */
- @mixin logo-container {
-     width: 100%;
-     display: flex;
-     justify-content: center;
- }
-/* accueil */
-    /* first section */
-    /* smartphone tablet */
+// logo
+@mixin logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+// accueil
+// first section
+// smartphone tablet
 @mixin city {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6vh;
-    background-color: darken($background-color,3%);
+    background-color: darken($background-color, 3%);
 }
- @mixin city-wrapper {
-     display: flex;
-     align-items: center;
-     width: 180px;
-     
- }
- @mixin description-div {
-     display: flex;
-     height: 35vh;
-     flex-direction: column;
-     align-items: center;
-     background-color: $background-color;
- }
-    /* desktop */
-    @mixin city-desktop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 10vh;
-        font-size: 30px;
-        background-color: darken($background-color,3%);
-    }
-     @mixin city-wrapper-desktop {
-         display: flex;
-         align-items: center;
-         
-     }
-     @mixin description-div-desktop {
-         display: flex;
-         height: 40vh;
-         flex-direction: column;
-         align-items: center;
-         background-color: $background-color;
-     }
-    /* third section */
-    @mixin restaurant-section {
+@mixin city-wrapper {
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+@mixin description-div {
+    display: flex;
+    height: 35vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color;
+}
+// desktop
+@mixin city-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 30px;
+    background-color: darken($background-color, 3%);
+}
+@mixin city-wrapper-desktop {
+    display: flex;
+    align-items: center;
+}
+@mixin description-div-desktop {
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color;
+}
+// third section
+@mixin restaurant-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $background-color;
+    padding-top: 30px;
+    &__wrapper {
+        width: 87%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: $background-color;
-        padding-top: 30px;
-        &__wrapper {
-            width: 87%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
     }
-    /* smartphone */
-    @mixin restaurant-card {
-        background-color: white;
-        height: 255px;
-        width: 100%;
-        max-width: 335px;
-        margin-bottom: 20px;
-        border-radius: 20px;
-        filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
-    }
-    @mixin card-image-style {
-        height: 70%;
-        border-radius: 20px 20px 0px 0px;
-        background-size: cover;
-        background-position: bottom;
-    }
-    
-    /* tablet */
-    @mixin restaurant-card-tablet {
-        background-color: white;
-        height: 355px;
-        width: 100%;
-        max-width: 550px;
-        margin-bottom: 20px;
-        border-radius: 20px;
-        filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
-    }
-    @mixin card-image-style-tablet {
-        height: 80%;
-        border-radius: 20px 20px 0px 0px;
-        background-size: cover;
-        background-position: bottom;
-    }
+}
+// smartphone
+@mixin restaurant-card {
+    background-color: white;
+    height: 255px;
+    width: 100%;
+    max-width: 335px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
+}
+@mixin card-image-style {
+    height: 70%;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: bottom;
+}
 
-    /* desktop */ 
-    @mixin restaurant-section-desktop {
+// tablet
+@mixin restaurant-card-tablet {
+    background-color: white;
+    height: 355px;
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
+}
+@mixin card-image-style-tablet {
+    height: 80%;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: bottom;
+}
+
+// desktop
+@mixin restaurant-section-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $background-color;
+    padding-top: 30px;
+    &__wrapper {
+        width: 87%;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        background: $background-color;
-        padding-top: 30px;
-        &__wrapper {
-            width: 87%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-around;
-        }
+        justify-content: space-around;
     }
-    @mixin restaurant-card-desktop {
-        background-color: white;
-        height: 355px;
-        width: 100%;
-        max-width:450px;
-        margin-bottom: 40px;
-        border-radius: 20px;
-        filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
-    }
-    @mixin card-image-style-desktop {
-        height: 80%;
-        border-radius: 20px 20px 0px 0px;
-        background-size: cover;
-        background-position: bottom;
-    }
- 
+}
+@mixin restaurant-card-desktop {
+    background-color: white;
+    height: 355px;
+    width: 310px;
+    max-width: 450px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
+}
+@mixin card-image-style-desktop {
+    height: 80%;
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+    background-position: bottom;
+}
+
 // card for menu
 
 @mixin card-menu {
     background-color: white;
     border-radius: 15px;
-    width: 345px;
+    width: 90%;
     padding-left: 10px;
     margin-bottom: 15px;
     filter: drop-shadow(2px 2px 2px darken($background-color, 30%));
 }
- /* footer */
-    /* smartphone */
+// footer
+// smartphone
 @mixin footer-style {
     color: white;
     background-color: darken($background-color, 65%);
     height: 200px;
+    width: 100vw;
     padding-left: 20px;
     padding-top: 10px;
 }
@@ -208,29 +206,29 @@
     }
 }
 
-    /* tablet */
+// tablet
 
-    @mixin footer-style-tablet {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        background-color: darken($background-color, 65%);
-        height: 300px;
-        padding-left: 20px;
-        padding-top: 10px;
+@mixin footer-style-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: darken($background-color, 65%);
+    height: 300px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+@mixin ul-style-tablet {
+    list-style: none;
+    font-family: roboto;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    margin-left: -40px;
+    &--margin {
+        margin-bottom: 20px;
     }
-    @mixin ul-style-tablet {
-        list-style: none;
-        font-family: roboto;
-        font-size: 18px;
-        letter-spacing: 1px;
-        font-weight: bolder;
-        margin-left: -40px;
-        &--margin {
-            margin-bottom: 20px;
-        }
-        &__icon--spacing {
-            margin-right: 10px;
-        }
+    &__icon--spacing {
+        margin-right: 10px;
     }
+}

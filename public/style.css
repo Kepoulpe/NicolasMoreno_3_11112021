@@ -1036,6 +1036,14 @@ a, a:hover, a:focus, a:active, a:visited {
   border-radius: 45px 45px 0px 0px;
   margin-top: -40px;
 }
+.menu__section--laNoteEnchantee {
+  height: 180vh;
+}
+
+.nav__arrow__menu {
+  position: absolute;
+  margin-left: 30px;
+}
 
 .menu {
   display: flex;

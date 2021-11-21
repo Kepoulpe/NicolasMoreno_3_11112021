@@ -95,6 +95,15 @@ a:visited {
     margin-bottom: 70px;
   }
 }
+.button {
+  transition: filter 300ms;
+  cursor: pointer;
+}
+.button:hover {
+  background: linear-gradient(#ff88de, #9b63df);
+  filter: drop-shadow(10px 10px 5px #a3a3a3);
+}
+
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments
@@ -457,7 +466,7 @@ a:visited {
   }
 
   .card__background--2 {
-    background-position-y: -180px;
+    background-position-y: bottom;
   }
 
   .card__background--2 {
@@ -468,7 +477,7 @@ a:visited {
   }
 
   .card__background--2 {
-    background-position-y: -180px;
+    background-position-y: bottom;
   }
 
   .card__background--3 {
@@ -479,7 +488,7 @@ a:visited {
   }
 
   .card__background--2 {
-    background-position-y: -180px;
+    background-position-y: bottom;
   }
 
   .card__background--4 {
@@ -490,9 +499,16 @@ a:visited {
   }
 
   .card__background--2 {
-    background-position-y: -180px;
+    background-position-y: bottom;
   }
 }
+.card {
+  transition: filter 300ms;
+}
+.card:hover {
+  filter: drop-shadow(10px 10px 10px #a3a3a3);
+}
+
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments
@@ -681,6 +697,13 @@ a:visited {
     justify-content: space-between;
   }
 }
+.card__menu {
+  transition: filter 300ms;
+}
+.card__menu:hover {
+  filter: drop-shadow(10px 10px 10px #a3a3a3);
+}
+
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments

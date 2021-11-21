@@ -59,3 +59,14 @@
         }
     }
 }
+
+// common animation
+
+.button{
+    transition: filter 300ms;
+    cursor: pointer;
+    &:hover {
+    background: linear-gradient(lighten($color-secondary,3%), lighten($color-primary, 3%));
+    filter: drop-shadow(10px 10px 5px darken($background-color, 30%));
+}
+}

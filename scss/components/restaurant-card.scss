@@ -106,7 +106,16 @@ $urls: (
             @include card-image-style-desktop;
         }
         .card__background--2 {
-            background-position-y: -180px;
+            background-position-y: bottom;
         }
+    }
+}
+
+// comon animation 
+
+.card {
+    transition: filter 300ms;
+    &:hover {
+        filter: drop-shadow(10px 10px 10px darken($background-color, 30%));
     }
 }

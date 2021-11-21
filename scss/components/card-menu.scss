@@ -113,3 +113,12 @@
         justify-content: space-between;
     }
 }
+
+// comon animation 
+
+.card__menu {
+    transition: filter 300ms;
+    &:hover {
+        filter: drop-shadow(10px 10px 10px darken($background-color, 30%));
+    }
+}

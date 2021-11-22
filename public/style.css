@@ -704,6 +704,15 @@ a:visited {
   filter: drop-shadow(10px 10px 10px #a3a3a3);
 }
 
+.fa-heart {
+  width: 40px;
+  fill: red;
+}
+
+.fa-heart:active {
+  width: auto;
+}
+
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments

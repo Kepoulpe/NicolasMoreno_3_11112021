@@ -122,3 +122,11 @@
         filter: drop-shadow(10px 10px 10px darken($background-color, 30%));
     }
 }
+
+.fa-heart {
+    width: 40px;
+    fill:red;
+}
+.fa-heart:active {
+width: auto;
+}

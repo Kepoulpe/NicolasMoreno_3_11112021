@@ -129,23 +129,30 @@
 svg {
     overflow: visible;
 }
-path {
-    &:hover {
-        stroke: red;
-    }
-    &:hover{
-        animation: filling-heart 1s ease-in-out both;
-        transform-origin: bottom;
-      }
-    }
-      @keyframes filling-heart {    
-    
-        0% {        
-          fill: white;      
-         
-          }       
-        100% {
-          fill: red;
-        }
-    }
 
+// @keyframes filling-heart {    
+//     0% {        
+//         fill: white;      
+        
+//         }       
+//     100% {
+//         fill: red;
+//     }
+// }
+
+// path {
+    // &:hover {
+    //     stroke: red;
+    // }
+    // &:hover{
+    //     animation: filling-heart 1s ease-in-out both;
+    //     transform-origin: bottom;
+    // }
+// }
+
+#fill {
+    &:hover {
+        fill: url(#bottom-to-top);
+    }
+}
+      

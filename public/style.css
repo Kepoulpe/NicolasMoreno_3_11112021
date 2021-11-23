@@ -712,22 +712,10 @@ svg {
   overflow: visible;
 }
 
-path:hover {
-  stroke: red;
-}
-path:hover {
-  animation: filling-heart 1s ease-in-out both;
-  transform-origin: bottom;
+#fill:hover {
+  fill: url(#bottom-to-top);
 }
 
-@keyframes filling-heart {
-  0% {
-    fill: white;
-  }
-  100% {
-    fill: red;
-  }
-}
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments
@@ -737,7 +725,7 @@ path:hover {
 .nav {
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: vw;
   margin-bottom: 3px;
   position: relative;
   box-shadow: 0px -10px 50px grey;

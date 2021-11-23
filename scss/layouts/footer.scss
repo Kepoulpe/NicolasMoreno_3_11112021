@@ -55,3 +55,9 @@
         font-size: 9px;
     }
 }
+
+// comon hover animation
+
+li:hover {
+    color: darken(white, 15%);
+}

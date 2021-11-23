@@ -705,14 +705,29 @@ a:visited {
 }
 
 .fa-heart {
-  width: 40px;
-  fill: red;
+  width: 25px;
 }
 
-.fa-heart:active {
-  width: auto;
+svg {
+  overflow: visible;
 }
 
+path:hover {
+  stroke: red;
+}
+path:hover {
+  animation: filling-heart 1s ease-in-out both;
+  transform-origin: bottom;
+}
+
+@keyframes filling-heart {
+  0% {
+    fill: white;
+  }
+  100% {
+    fill: red;
+  }
+}
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments
@@ -905,6 +920,10 @@ a:visited {
     font-size: 9px;
   }
 }
+li:hover {
+  color: #d9d9d9;
+}
+
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments

@@ -17,6 +17,8 @@ $urls: (
     .card__background--#{$i} {
         @include card-image-style;
         background-image: url(#{$url});
+        display: flex;
+        justify-content: flex-end
     }
 }
 

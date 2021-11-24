@@ -13,7 +13,6 @@
 <body>
     <header>
         <nav class="nav">
-            <div class="nav__arrow"><a class="nav__arrow--link" href=""><i class="fas fa-arrow-left"></i></a></div>
             <div class="nav__logo--container"><img class="nav__logo" src="../images/pics/ohmyfood.png" alt="brand logo">
             </div>
         </nav>
@@ -69,26 +68,29 @@
             <div class="third__section__wrapper">
                 <h2 class="third__section__title--position">Restaurants</h2>
                 <div class="card"><a href="menu-la-palette-du-goût.html">
-                        <div class="card__background--1"></div>
+                        <div class="card__background--1">
+                            <div class="new__tag">Nouveau</div>
+                        </div>
                         <div class="card__bottom">
                             <div>
                                 <h4 class="card__bottom__title">La palette du goût</h4>
                                 <p class="card__bottom__paragraph">Ménilmontant</p>
-                            </div><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
+                            </div>
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
                                 class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512">
-
                                 <defs>
-                                    <linearGradient id="bottom-to-top" x2="0" x1="0" y1="1" y2="0">
-                                      <stop offset="0%" stop-color="red">
-                                        <animate dur="1s" attributeName="offset" from="0" to="1" repeatCount="indefinite" />
-                                      </stop>
-                                      <stop offset="100%" stop-color="#fff">
-                                        <animate dur="1s" attributeName="offset" from="0" to="1" repeatCount="indefinite" />
-                                      </stop>
+                                    <linearGradient id="first-heart" x2="0" x1="0" y1="1" y2="0">
+                                        <stop offset="0%" stop-color="red">
+                                            <animate dur="0.5s" attributeName="offset" from="0" to="1" fill="freeze"
+                                                begin="fill.mouseover" />
+                                        </stop>
+                                        <stop offset="100%" stop-color="#fff">
+                                            <animate dur="0.5s" attributeName="offset" from="0" to="1" fill="freeze"
+                                                begin="fill.mouseover" />
+                                        </stop>
                                     </linearGradient>
                                 </defs>
-
                                 <path stroke="#000" id="fill" fill="#fff" stroke-width="40"
                                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                 </path>
@@ -96,15 +98,30 @@
                         </div>
                     </a></div>
                 <div class="card"><a href="menu-la-note-enchantée.html">
-                        <div class="card__background--2"></div>
+                        <div class="card__background--2">
+                            <div class="new__tag">Nouveau</div>
+                        </div>
                         <div class="card__bottom">
                             <div>
                                 <h4 class="card__bottom__title">La note enchatée</h4>
                                 <p class="card__bottom__paragraph">Charonne</p>
-                            </div><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
+                            </div>
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
                                 class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512">
-                                <path stroke="#000" fill="#fff" stroke-width="40"
+                                <defs>
+                                    <linearGradient id="second-heart" x2="0" x1="0" y1="1" y2="0">
+                                        <stop offset="0%" stop-color="red">
+                                            <animate dur="0.5s" attributeName="offset" from="0" to="1" fill="freeze"
+                                                begin="fill2.mouseover" />
+                                        </stop>
+                                        <stop offset="100%" stop-color="#fff">
+                                            <animate dur="0.5s" attributeName="offset" from="0" to="1" fill="freeze"
+                                                begin="fill2.mouseover" />
+                                        </stop>
+                                    </linearGradient>
+                                </defs>
+                                <path stroke="#000" id="fill2" fill="#fff" stroke-width="40"
                                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                 </path>
                             </svg>
@@ -116,10 +133,23 @@
                             <div>
                                 <h4 class="card__bottom__title">A la française</h4>
                                 <p class="card__bottom__paragraph">Cité Rouge</p>
-                            </div><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
+                            </div>
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
                                 class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512">
-                                <path stroke="#000" fill="#fff" stroke-width="40"
+                                <defs>
+                                    <linearGradient id="third-heart" x2="0" x1="0" y1="1" y2="0">
+                                        <stop offset="0%" stop-color="red">
+                                            <animate dur="0.5s" attributeName="offset" from="0" to="1" fill="freeze"
+                                                begin="fill3.mouseover" />
+                                        </stop>
+                                        <stop offset="100%" stop-color="#fff">
+                                            <animate dur="0.5s" attributeName="offset" from="0" to="1" fill="freeze"
+                                                begin="fill3.mouseover" />
+                                        </stop>
+                                    </linearGradient>
+                                </defs>
+                                <path stroke="#000" id="fill3" fill="#fff" stroke-width="40"
                                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                 </path>
                             </svg>
@@ -131,10 +161,23 @@
                             <div>
                                 <h4 class="card__bottom__title">Le délice des sens</h4>
                                 <p class="card__bottom__paragraph">Folie-Méricourt</p>
-                            </div><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
+                            </div>
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
                                 class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512">
-                                <path stroke="#000" fill="#fff" stroke-width="40"
+                                <defs>
+                                    <linearGradient id="fourth-heart" x2="0" x1="0" y1="1" y2="0">
+                                        <stop offset="0%" stop-color="red">
+                                            <animate dur="0.5s" attributeName="offset" from="0" to="1" fill="freeze"
+                                                begin="fill4.mouseover" />
+                                        </stop>
+                                        <stop offset="100%" stop-color="#fff">
+                                            <animate dur="0.5s" attributeName="offset" from="0" to="1" fill="freeze"
+                                                begin="fill4.mouseover" />
+                                        </stop>
+                                    </linearGradient>
+                                </defs>
+                                <path stroke="#000" id="fill4" fill="#fff" stroke-width="40"
                                     d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                 </path>
                             </svg>

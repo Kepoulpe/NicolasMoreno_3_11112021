@@ -140,19 +140,34 @@ svg {
 //     }
 // }
 
-// path {
-    // &:hover {
-    //     stroke: red;
-    // }
+ path {
+     &:hover {
+         stroke: red;
+     }
     // &:hover{
     //     animation: filling-heart 1s ease-in-out both;
     //     transform-origin: bottom;
     // }
-// }
+}
 
 #fill {
     &:hover {
-        fill: url(#bottom-to-top);
+        fill: url(#first-heart);
+    }
+}
+#fill2 {
+    &:hover {
+        fill :url(#second-heart)
+    }
+}
+#fill3 {
+    &:hover {
+        fill :url(#third-heart)
+    }
+}
+#fill4 {
+    &:hover {
+        fill :url(#fourth-heart)
     }
 }
       

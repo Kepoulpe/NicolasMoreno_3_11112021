@@ -169,6 +169,8 @@
     border-radius: 20px 20px 0px 0px;
     background-size: cover;
     background-position: bottom;
+    display: flex;
+    justify-content: flex-end;
 }
 
 // card for menu
@@ -187,8 +189,8 @@
     color: white;
     background-color: darken($background-color, 65%);
     height: 200px;
-    width: 100vw;
-    padding-left: 20px;
+    width: 91%;
+    padding-left: 9%;
     padding-top: 10px;
 }
 @mixin ul-style {

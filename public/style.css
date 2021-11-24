@@ -302,6 +302,8 @@ a:visited {
   background-size: cover;
   background-position: bottom;
   background-image: url(/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .card__background--2 {
@@ -310,6 +312,8 @@ a:visited {
   background-size: cover;
   background-position: bottom;
   background-image: url(/images/pics/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .card__background--3 {
@@ -318,6 +322,8 @@ a:visited {
   background-size: cover;
   background-position: bottom;
   background-image: url(/images/pics/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .card__background--4 {
@@ -326,6 +332,8 @@ a:visited {
   background-size: cover;
   background-position: bottom;
   background-image: url(/images/pics/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media only screen and (max-width: 575.99px) {
@@ -463,6 +471,8 @@ a:visited {
     border-radius: 20px 20px 0px 0px;
     background-size: cover;
     background-position: bottom;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .card__background--2 {
@@ -474,6 +484,8 @@ a:visited {
     border-radius: 20px 20px 0px 0px;
     background-size: cover;
     background-position: bottom;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .card__background--2 {
@@ -485,6 +497,8 @@ a:visited {
     border-radius: 20px 20px 0px 0px;
     background-size: cover;
     background-position: bottom;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .card__background--2 {
@@ -496,6 +510,8 @@ a:visited {
     border-radius: 20px 20px 0px 0px;
     background-size: cover;
     background-position: bottom;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .card__background--2 {
@@ -712,8 +728,44 @@ svg {
   overflow: visible;
 }
 
+path:hover {
+  stroke: red;
+}
+
 #fill:hover {
-  fill: url(#bottom-to-top);
+  fill: url(#first-heart);
+}
+
+#fill2:hover {
+  fill: url(#second-heart);
+}
+
+#fill3:hover {
+  fill: url(#third-heart);
+}
+
+#fill4:hover {
+  fill: url(#fourth-heart);
+}
+
+/* colors */
+/**
+* responsive mixin with two possible sets of arguments
+*  - smartphone, tablet
+*  - tablet, desktop
+*/
+.new__tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #99E2D0;
+  color: #278870;
+  width: 80px;
+  height: 35px;
+  margin-right: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
 }
 
 /* colors */
@@ -803,8 +855,8 @@ svg {
     color: white;
     background-color: #494949;
     height: 200px;
-    width: 100vw;
-    padding-left: 20px;
+    width: 91%;
+    padding-left: 9%;
     padding-top: 10px;
   }
 

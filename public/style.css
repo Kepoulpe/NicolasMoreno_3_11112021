@@ -5,19 +5,22 @@
 *  - tablet, desktop
 */
 /* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @font-face {
   font-family: shrikhand;
   src: url(/fonts/shrikhand/Shrikhand-Regular.ttf);
 }
 @font-face {
   font-family: roboto;
-  src: url(/fonts/roboto/Roboto-Regular.ttf);
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 }
 body {
   font-family: roboto;
+  font-weight: 500;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 main {
@@ -768,6 +771,35 @@ path:hover {
   border-radius: 5px;
 }
 
+/* colors */
+/**
+* responsive mixin with two possible sets of arguments
+*  - smartphone, tablet
+*  - tablet, desktop
+*/
+.loader {
+  border: 1.5vw solid #9356DC;
+  border-radius: 50%;
+  border-top: 1.5vw solid #FF79DA;
+  width: 7vw;
+  max-width: 120px;
+  height: 7vw;
+  max-height: 120px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  z-index: 10;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments

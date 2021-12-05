@@ -176,6 +176,7 @@
 // card for menu
 
 @mixin card-menu {
+    display: flex;
     background-color: white;
     border-radius: 15px;
     width: 90%;

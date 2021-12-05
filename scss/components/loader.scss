@@ -4,7 +4,6 @@
 @import "./../utils/placeholders";
 
 
-
 .loader {
     border: 1.5vw solid $color-primary;
     border-radius: 50%;
@@ -14,10 +13,18 @@
     height: 7vw;
     max-height: 120px;
     animation: spin 1s linear infinite;
-    position: fixed;
-    top: 45%;
-    left: 45%;
-    z-index: 10;
+    &__background {
+        width: 100%;
+        height: 100vh;
+        background-color: $background-color;
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 90%;
+        visibility: hidden;
+    }
 }
 
 @keyframes spin {

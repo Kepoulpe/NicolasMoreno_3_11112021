@@ -828,6 +828,56 @@ path:hover {
 *  - smartphone, tablet
 *  - tablet, desktop
 */
+.card__entree__animation {
+  animation: fadeInEntree 2s ease-out;
+}
+
+@keyframes fadeInEntree {
+  from {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+.card__plats__animation {
+  animation: fadeInPlats 2s ease-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInPlats {
+  from {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+.card__dessert__animation {
+  animation: fadeInDessert 2s ease-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInDessert {
+  from {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+/* colors */
+/**
+* responsive mixin with two possible sets of arguments
+*  - smartphone, tablet
+*  - tablet, desktop
+*/
 .nav {
   display: flex;
   align-items: center;

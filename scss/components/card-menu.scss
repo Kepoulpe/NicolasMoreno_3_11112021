@@ -32,7 +32,10 @@
             margin-right: 30px;
         }
         &__check {
-            background-color: $color-secondary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-tertiary;
             width: 30px;
         }
     }
@@ -114,8 +117,16 @@
             align-items: center;
         }
         &__check {
-            background-color: $color-secondary;
-            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-tertiary;
+            width: 0%;
+            opacity: 0;
+            border-radius:0 15px 15px 0px;
+            //transition-property: width;
+            //transition-duration: 1s;
+            transition: width 1.5s, opacity 0.5s;
         }
     }
     .card__menu__bottom {
@@ -123,6 +134,14 @@
         align-items: center;
         justify-content: space-between;
     }
+}
+// comon style for check icon
+
+.fa-check-circle {
+    color: white;
+    font-size: 1.5vw;
+    transform: rotate(-240deg);
+    transition: transform 1.5s;
 }
 
 // comon animation
@@ -140,25 +159,10 @@
 svg {
     overflow: visible;
 }
-
-// @keyframes filling-heart {    
-//     0% {        
-//         fill: white;      
-        
-//         }       
-//     100% {
-//         fill: red;
-//     }
-// }
-
  path {
      &:hover {
          stroke: red;
      }
-    // &:hover{
-    //     animation: filling-heart 1s ease-in-out both;
-    //     transform-origin: bottom;
-    // }
 }
 
 #fill {

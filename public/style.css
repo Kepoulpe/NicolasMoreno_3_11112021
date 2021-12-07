@@ -591,6 +591,7 @@ a:visited {
 @media only screen and (max-width: 575.99px) {
   .card__menu {
     display: flex;
+    justify-content: space-between;
     background-color: white;
     border-radius: 15px;
     width: 90%;
@@ -624,7 +625,10 @@ a:visited {
     margin-right: 30px;
   }
   .card__menu__check {
-    background-color: #FF79DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
     width: 30px;
   }
 
@@ -637,6 +641,7 @@ a:visited {
 @media only screen and (min-width: 576px) and (max-width: 1199.99px) {
   .card__menu {
     display: flex;
+    justify-content: space-between;
     background-color: white;
     border-radius: 15px;
     width: 90%;
@@ -682,6 +687,7 @@ a:visited {
 @media only screen and (min-width: 1200px) {
   .card__menu {
     display: flex;
+    justify-content: space-between;
     background-color: white;
     border-radius: 15px;
     width: 90%;
@@ -720,8 +726,14 @@ a:visited {
     align-items: center;
   }
   .card__menu__check {
-    background-color: #FF79DA;
-    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    width: 0%;
+    opacity: 0;
+    border-radius: 0 15px 15px 0px;
+    transition: width 1.5s, opacity 0.5s;
   }
 
   .card__menu__bottom {
@@ -730,6 +742,13 @@ a:visited {
     justify-content: space-between;
   }
 }
+.fa-check-circle {
+  color: white;
+  font-size: 1.5vw;
+  transform: rotate(-240deg);
+  transition: transform 1.5s;
+}
+
 .card__menu {
   transition: filter 300ms;
 }
@@ -811,6 +830,7 @@ path:hover {
   justify-content: center;
   align-items: center;
   opacity: 90%;
+  animation: fade 3s linear;
   visibility: hidden;
 }
 
@@ -822,6 +842,23 @@ path:hover {
     transform: rotate(360deg);
   }
 }
+@keyframes fade {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+  0% {
+    opacity: 90%;
+  }
+  90% {
+    opacity: 90%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments
@@ -829,49 +866,61 @@ path:hover {
 *  - tablet, desktop
 */
 .card__entree__animation {
-  animation: fadeInEntree 2s ease-out;
+  animation: fadeInEntree 0.8s ease-out;
+  animation-fill-mode: both;
 }
 
 @keyframes fadeInEntree {
   from {
     opacity: 0;
-    margin-top: 100px;
+    transform: translate(0px, 300px);
   }
   to {
     opacity: 1;
-    margin-top: 0px;
+    transform: translate(0px, 0px);
   }
 }
 .card__plats__animation {
-  animation: fadeInPlats 2s ease-out;
+  animation: fadeInPlats 0.8s ease-out;
   animation-delay: 0.5s;
+  animation-fill-mode: both;
 }
 
 @keyframes fadeInPlats {
   from {
     opacity: 0;
-    margin-top: 100px;
+    transform: translate(0px, 300px);
   }
   to {
     opacity: 1;
-    margin-top: 0px;
+    transform: translate(0px, 0px);
   }
 }
 .card__dessert__animation {
-  animation: fadeInDessert 2s ease-out;
-  animation-delay: 0.5s;
+  animation: fadeInDessert 0.8s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 
 @keyframes fadeInDessert {
   from {
     opacity: 0;
-    margin-top: 100px;
+    transform: translate(0px, 300px);
   }
   to {
     opacity: 1;
-    margin-top: 0px;
+    transform: translate(0px, 0px);
   }
 }
+.card__menu:hover > .card__menu__check {
+  width: 25%;
+  opacity: 1;
+}
+
+.card__menu:hover .fa-check-circle {
+  transform: rotate(0deg);
+}
+
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments

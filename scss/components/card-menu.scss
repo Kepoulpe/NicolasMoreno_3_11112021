@@ -17,32 +17,49 @@
             width: 90%;
         }
         &__title {
-            font-size: 18px;
+            font-size: 4.5vw;
             margin-bottom: 0px;
             margin-top: 10px;
         }
         &__paragraph {
-            font-size: 15px;
+            font-size: 3.5vw;
             margin-top: 5px;
             margin-bottom: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 80%;
         }
         &__price {
             font-size: 15px;
             font-weight: bold;
             margin-right: 30px;
+            width: 2%;
         }
         &__check {
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: $color-tertiary;
-            width: 30px;
+            width: 0%;
+            opacity: 0;
+            border-radius:0 15px 15px 0px;
+            transition: width 1.5s, opacity 0.5s;
+        }
+        &__content {
+            width: 100%;
         }
     }
     .card__menu__bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    .fa-check-circle {
+        color: white;
+        font-size: 4vw;
+        transform: rotate(-240deg);
+        transition: transform 1.5s;
     }
 }
 @include respond(tablet) {
@@ -65,6 +82,10 @@
             font-size: 15px;
             margin-top: 5px;
             margin-bottom: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 80%;
         }
         &__price {
             font-size: 15px;
@@ -76,11 +97,30 @@
             flex-direction: column;
             align-items: center;
         }
+        &__check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-tertiary;
+            width: 0%;
+            opacity: 0;
+            border-radius:0 15px 15px 0px;
+            transition: width 1.5s, opacity 0.5s;
+        }
+        &__content {
+            width: 100%;
+        }
     }
     .card__menu__bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    .fa-check-circle {
+        color: white;
+        font-size: 2.5vw;
+        transform: rotate(-240deg);
+        transition: transform 1.5s;
     }
 }
 @include respond(desktop) {
@@ -105,6 +145,10 @@
             font-size: 15px;
             margin-top: 5px;
             margin-bottom: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 80%;
         }
         &__price {
             font-size: 15px;
@@ -124,24 +168,23 @@
             width: 0%;
             opacity: 0;
             border-radius:0 15px 15px 0px;
-            //transition-property: width;
-            //transition-duration: 1s;
             transition: width 1.5s, opacity 0.5s;
         }
+        &__content {
+            width: 100%;
+        }
+    }
+    .fa-check-circle {
+        color: white;
+        font-size: 1.5vw;
+        transform: rotate(-240deg);
+        transition: transform 1.5s;
     }
     .card__menu__bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-}
-// comon style for check icon
-
-.fa-check-circle {
-    color: white;
-    font-size: 1.5vw;
-    transform: rotate(-240deg);
-    transition: transform 1.5s;
 }
 
 // comon animation

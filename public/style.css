@@ -610,32 +610,50 @@ a:visited {
     width: 90%;
   }
   .card__menu__title {
-    font-size: 18px;
+    font-size: 4.5vw;
     margin-bottom: 0px;
     margin-top: 10px;
   }
   .card__menu__paragraph {
-    font-size: 15px;
+    font-size: 3.5vw;
     margin-top: 5px;
     margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
   }
   .card__menu__price {
     font-size: 15px;
     font-weight: bold;
     margin-right: 30px;
+    width: 2%;
   }
   .card__menu__check {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
-    width: 30px;
+    width: 0%;
+    opacity: 0;
+    border-radius: 0 15px 15px 0px;
+    transition: width 1.5s, opacity 0.5s;
+  }
+  .card__menu__content {
+    width: 100%;
   }
 
   .card__menu__bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .fa-check-circle {
+    color: white;
+    font-size: 4vw;
+    transform: rotate(-240deg);
+    transition: transform 1.5s;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 1199.99px) {
@@ -666,6 +684,10 @@ a:visited {
     font-size: 15px;
     margin-top: 5px;
     margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
   }
   .card__menu__price {
     font-size: 15px;
@@ -677,11 +699,31 @@ a:visited {
     flex-direction: column;
     align-items: center;
   }
+  .card__menu__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    width: 0%;
+    opacity: 0;
+    border-radius: 0 15px 15px 0px;
+    transition: width 1.5s, opacity 0.5s;
+  }
+  .card__menu__content {
+    width: 100%;
+  }
 
   .card__menu__bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .fa-check-circle {
+    color: white;
+    font-size: 2.5vw;
+    transform: rotate(-240deg);
+    transition: transform 1.5s;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -714,6 +756,10 @@ a:visited {
     font-size: 15px;
     margin-top: 5px;
     margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
   }
   .card__menu__price {
     font-size: 15px;
@@ -735,6 +781,16 @@ a:visited {
     border-radius: 0 15px 15px 0px;
     transition: width 1.5s, opacity 0.5s;
   }
+  .card__menu__content {
+    width: 100%;
+  }
+
+  .fa-check-circle {
+    color: white;
+    font-size: 1.5vw;
+    transform: rotate(-240deg);
+    transition: transform 1.5s;
+  }
 
   .card__menu__bottom {
     display: flex;
@@ -742,13 +798,6 @@ a:visited {
     justify-content: space-between;
   }
 }
-.fa-check-circle {
-  color: white;
-  font-size: 1.5vw;
-  transform: rotate(-240deg);
-  transition: transform 1.5s;
-}
-
 .card__menu {
   transition: filter 300ms;
 }

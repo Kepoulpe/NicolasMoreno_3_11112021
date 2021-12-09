@@ -751,6 +751,10 @@ a:visited {
     font-size: 18px;
     margin-bottom: 0px;
     margin-top: 10px;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   .card__menu__paragraph {
     font-size: 15px;
@@ -970,6 +974,18 @@ path:hover {
   transform: rotate(0deg);
 }
 
+@media only screen and (max-width: 575.99px) {
+  .card__menu:hover > .card__menu__content {
+    width: 90%;
+    transition: width 0.8s linear;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card__menu:hover > .card__menu__content {
+    width: 75%;
+    transition: width 0.8s linear;
+  }
+}
 /* colors */
 /**
 * responsive mixin with two possible sets of arguments

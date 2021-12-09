@@ -62,3 +62,16 @@
 .card__menu:hover .fa-check-circle {
     transform : rotate(0deg);
 }
+
+@include respond(smartphone) {
+    .card__menu:hover > .card__menu__content {
+        width: 90%;
+        transition: width 0.8s linear;
+    }
+}
+@include respond(desktop) {
+    .card__menu:hover > .card__menu__content {
+        width: 75%;
+        transition: width 0.8s linear;
+    }
+}

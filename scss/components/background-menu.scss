@@ -6,10 +6,10 @@
 
 // Function that will set these classes dynamically
 $urls: (
-  "laPaletteDuGout": "/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg",
-  "laNoteEnchantee": "/images/pics/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg",
-  "aLaFrancaise": "/images/pics/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg",
-  "leDeliceDesSens": "/images/pics/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg",
+  "laPaletteDuGout": "https://github.com/Kepoulpe/NicolasMoreno_3_11112021/blob/main/images/pics/restaurant/jay-wennington-N_Y88TWmGwA-unsplash.jpg",
+  "laNoteEnchantee": "https://github.com/Kepoulpe/NicolasMoreno_3_11112021/blob/main/images/pics/restaurant/stil-u2Lp8tXIcjw-unsplash.jpg",
+  "aLaFrancaise": "https://github.com/Kepoulpe/NicolasMoreno_3_11112021/blob/main/images/pics/restaurant/toa-heftiba-DQKerTsQwi0-unsplash.jpg",
+  "leDeliceDesSens": "https://github.com/Kepoulpe/NicolasMoreno_3_11112021/blob/main/images/pics/restaurant/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg",
 );
 
 @each $name, $url in $urls {

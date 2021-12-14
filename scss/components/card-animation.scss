@@ -66,12 +66,12 @@
 @include respond(smartphone) {
     .card__menu:hover > .card__menu__content {
         width: 90%;
-        transition: width 0.8s linear;
+        transition: width 0.5s linear;
     }
 }
 @include respond(desktop) {
     .card__menu:hover > .card__menu__content {
         width: 75%;
-        transition: width 0.8s linear;
+        transition: width 0.5s linear;
     }
 }
